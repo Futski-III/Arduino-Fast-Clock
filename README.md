@@ -8,6 +8,7 @@ The code has not been posted yet, but should be here by the beginning of April 2
 
 Dr. Ivan Von Futski III
 
+
 ## Parts List
 * 1 - Arduino Uno or similar
 * 1 - 4x20 LCD display with !2C backpack
@@ -20,11 +21,35 @@ Dr. Ivan Von Futski III
 ## Library Dependencies
 The following libraries musty be installed for this project.
 * LiquidCrystal_I2C by Frank de Brabander [Get it here on GitHub](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
-**Note** This library may conflict with the NewLiquidCrystal library.  If you have NewLiquidCrystal library installed, you may need to unindtall it and use this library instead.  
+
+  **Note** This library may conflict with the NewLiquidCrystal library.  If you have NewLiquidCrystal library installed, you may need to unindtall it and use this library instead.  
 * TM1637Display byAvishay [Get it here on GitHub](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
 * DS3232RTC by Jack Christensen [Get it here on GitHub](https://github.com/JChristensen/DS3232RTC)
 * Bounce2 by Thomas O Fredericks [Get it here on GitHub](https://github.com/thomasfredericks/Bounce2)
 * TimeLib by Paul Stoffregen [Get it here on GitHub](https://github.com/PaulStoffregen/Time)
-* LiquidMenu by Vasil Kalchev [Get it here on GitHub](https://github.com/VaSe7u/LiquidMenu)
-**Note:**  By default, the LiquidMenu library will not work with an I2C 4x20 LCD.  To fix that you will need to edit the
+* LiquidMenu by Vasil Kalchev [Get it here on GitHub](https://github.com/VaSe7u/LiquidMenu) 
+
+  **Note:**  By default, the LiquidMenu library will not work with an I2C 4x20 LCD.  To fix that you will need to edit the
 "LiquidMenu_config.h" file.  Change the I2C option from "false" to "true".  You will find the LiquidMenu_config.h file in the library folder.  You can use notepad or any other text editor to make the change.  
+
+## Pin Connections
+| Device | Device pin | Arduino Pin | Protocol |
+| ------------- |:----------:|:----------:| -------- |
+|Rotary Encoder|GND|GND|none|
+|Rotary Encoder|VCC+|VCC+|none|
+|Rotary Encoder|SW|4|none|
+|Rotary Encoder|DT|2|none|
+|Rotary Encoder|CLK|3|none|
+|LCD|GND|GND|I2C|
+|LCD|VCC+|VCC+|I2C|
+|LCD|SDA|A4|I2C|
+|LCD|SCL|A5|I2C|
+|RTC|GND|GND|I2C|
+|RTC|VCC+|VCC+|I2C|
+|RTC|SDA|A4|I2C|
+|RTC|SCL|A5|I2C|
+|TM1637 LED|GND|GND|SPI|
+|TM1637 LED|VCC+|VCC+|SPI|
+|TM1637 LED|SPI|DIO 12|SPI|
+|TM1637 LED|SPI|CLK 11|SPI|
+
