@@ -53,3 +53,5 @@ The following libraries musty be installed for this project.
 |TM1637 LED|SPI|DIO 12|SPI|
 |TM1637 LED|SPI|CLK 11|SPI|
 
+##Source Code
+The source code for the Fast Clock project can be found in the Fast_Clock.ino file
