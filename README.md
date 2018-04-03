@@ -20,14 +20,14 @@ Dr. Ivan Von Futski III
 
 ## Library Dependencies
 The following libraries musty be installed for this project.
-* LiquidCrystal_I2C by Frank de Brabander [Get it here on GitHub](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
+* __LiquidCrystal_I2C__ by Frank de Brabander [Get it here on GitHub](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
 
   **Note** This library may conflict with the NewLiquidCrystal library.  If you have NewLiquidCrystal library installed, you may need to unindtall it and use this library instead.  
-* TM1637Display byAvishay [Get it here on GitHub](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
-* DS3232RTC by Jack Christensen [Get it here on GitHub](https://github.com/JChristensen/DS3232RTC)
-* Bounce2 by Thomas O Fredericks [Get it here on GitHub](https://github.com/thomasfredericks/Bounce2)
-* TimeLib by Paul Stoffregen [Get it here on GitHub](https://github.com/PaulStoffregen/Time)
-* LiquidMenu by Vasil Kalchev [Get it here on GitHub](https://github.com/VaSe7u/LiquidMenu) 
+* __TM1637Display__ byAvishay [Get it here on GitHub](https://github.com/avishorp/TM1637)
+* __DS3232RTC__ by Jack Christensen [Get it here on GitHub](https://github.com/JChristensen/DS3232RTC)
+* __Bounce2__ by Thomas O Fredericks [Get it here on GitHub](https://github.com/thomasfredericks/Bounce2)
+* __TimeLib__ by Paul Stoffregen [Get it here on GitHub](https://github.com/PaulStoffregen/Time)
+* __LiquidMenu__ by Vasil Kalchev [Get it here on GitHub](https://github.com/VaSe7u/LiquidMenu) 
 
   **Note:**  By default, the LiquidMenu library will not work with an I2C 4x20 LCD.  To fix that you will need to edit the
 "LiquidMenu_config.h" file.  Change the I2C option from "false" to "true".  You will find the LiquidMenu_config.h file in the library folder.  You can use notepad or any other text editor to make the change.  
