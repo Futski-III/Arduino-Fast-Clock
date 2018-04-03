@@ -50,8 +50,8 @@ The following libraries musty be installed for this project.
 |RTC|SCL|A5|I2C|
 |TM1637 LED|GND|GND|SPI|
 |TM1637 LED|VCC+|VCC+|SPI|
-|TM1637 LED|SPI|DIO 12|SPI|
-|TM1637 LED|SPI|CLK 11|SPI|
+|TM1637 LED|DIO|12|SPI|
+|TM1637 LED|CLK|11|SPI|
 
 ## Fast Clock Source Code
 The source code for the Fast Clock project can be found in the **"Fast_Clock.ino"** file.  
