@@ -15,8 +15,8 @@ Dr. Ivan Von Futski III
 * 1 - TM1637 LED display w/SPI connections
 * 1 - Rotary Encoder
 * 1 - DS3231 RTC (Real Time Clock) module
-* 2 - 0.1uF capacitor (100 nf)
-* 2 - 10K Resistor
+* 2 - 100 nf capacitor (0.1uF)  (# 104 may be printed on the cap.)
+* 2 - 10K Resistor (Brown, Black, Orange)
 
 ## Library Dependencies
 The following libraries musty be installed for this project.
