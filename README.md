@@ -53,6 +53,8 @@ The following libraries musty be installed for this project.
 |TM1637 LED|DIO|12|SPI|
 |TM1637 LED|CLK|11|SPI|
 
+![alt text](https://github.com/Futski-III/Arduino-Fast-Clock/blob/master/fast_clock_bb.jpg "Fritzing Fast Clock")
+
 ## Fast Clock Source Code
 The source code for the Fast Clock project can be found in the **"Fast_Clock.ino"** file.  
 
