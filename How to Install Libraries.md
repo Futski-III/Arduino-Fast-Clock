@@ -1,4 +1,4 @@
-##How to install the libraries from GitHub
+## How to install the libraries from GitHub
 
 It's actually very easy to install libraries from Github.  So I'll walk you though it.
 
@@ -11,4 +11,4 @@ It's actually very easy to install libraries from Github.  So I'll walk you thou
 1. Find the library to add and click it.  It's name will appear in the file name box.  
 1. Click Open
 1. You're Done
-1.  Close and Re-open Arduino just to make sure Arduino finds if for your project.
+1. Close and Re-open Arduino just to make sure Arduino finds if for your project.
