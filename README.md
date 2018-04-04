@@ -4,33 +4,29 @@ This project is an Arduino based Fast Clock implementation.  Typically used in m
 Note: Because of the way the fast clock runs, it is best to select a speed ratio that is an even multiple of 60, otherwise it may not appear to update smoothly.
 i.e. choose one of the following:  1:1, 2:1, 3:1, 4:1, 5:1, 6:1, 10:1, 12:1, 15:1.  
 
-The code has not been posted yet, but should be here by the beginning of April 2018.  Please come back at a later date.
-
-Dr. Ivan Von Futski III
-
 
 ## Parts List
 * 1 - Arduino Uno or similar
-* 1 - 4x20 LCD display with !2C backpack
+* 1 - 4x20 LCD display with I2C backpack
 * 1 - TM1637 LED display w/SPI connections
 * 1 - Rotary Encoder
 * 1 - DS3231 RTC (Real Time Clock) module
-* 2 - 100 nf capacitor (0.1uF)  (# 104 may be printed on the cap.)
+* 2 - 100 nF capacitor (0.1uF)  (# 104 may be printed on the cap.)
 * 2 - 10K Resistor (Brown, Black, Orange)
 
 ## Library Dependencies
 The following libraries musty be installed for this project.
 * __LiquidCrystal_I2C__ by Frank de Brabander [Get it here on GitHub](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
 
-  **Note** This library may conflict with the NewLiquidCrystal library.  If you have NewLiquidCrystal library installed, you may need to unindtall it and use this library instead.  
-* __TM1637Display__ byAvishay [Get it here on GitHub](https://github.com/avishorp/TM1637)
+  **Note** This library may conflict with the NewLiquidCrystal library.  If you have NewLiquidCrystal library installed, you may need to uninstall it and use this library instead.  
+* __TM1637Display__ by Avishay [Get it here on GitHub](https://github.com/avishorp/TM1637)
 * __DS3232RTC__ by Jack Christensen [Get it here on GitHub](https://github.com/JChristensen/DS3232RTC)
 * __Bounce2__ by Thomas O Fredericks [Get it here on GitHub](https://github.com/thomasfredericks/Bounce2)
 * __TimeLib__ by Paul Stoffregen [Get it here on GitHub](https://github.com/PaulStoffregen/Time)
 * __LiquidMenu__ by Vasil Kalchev [Get it here on GitHub](https://github.com/VaSe7u/LiquidMenu) 
 
   **Note:**  By default, the LiquidMenu library will not work with an I2C 4x20 LCD.  To fix that you will need to edit the
-"LiquidMenu_config.h" file.  Change the I2C option from "false" to "true".  You will find the LiquidMenu_config.h file in the library folder.  You can use notepad or any other text editor to make the change.  
+"LiquidMenu_config.h" file.  Change the I2C option from "false" to "true".  You will find the LiquidMenu_config.h file in the library folder.  You can use Notepad or any other text editor to make the change.  
 
 ## Pin Connections
 | Device | Device pin | Arduino Pin | Protocol |
@@ -60,6 +56,6 @@ The source code for the Fast Clock project can be found in the **"Fast_Clock.ino
 
 The easiest way to copy the code to your Arduino IDE is to simply click on the file name.  It will open the code on a new page.  Find and click the **"Raw"** button.  It's near the top of the code block about 2/3 the way over on the right side of the screen.  That'll open the code in a window with nothing else.  Hit Ctrl-A then Ctrl-C.  
 
-Now open a new blank Arduino project and paste (ctrl-V) the code into the blank Arduino Window.  
+Now open a new blank Arduino project.  Delete any code that Auduino inserts and then paste (ctrl-V) the code into the blank Arduino Window.  
 
-Save the project with a good name like **"Fast_Clock"**.  
+Save the project with a meaningful name like **"Fast_Clock"**.  
