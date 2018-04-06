@@ -54,8 +54,12 @@ The following libraries musty be installed for this project.
 ## Fast Clock Source Code
 The source code for the Fast Clock project can be found in the **"Fast_Clock.ino"** file.  
 
-The easiest way to copy the code to your Arduino IDE is to simply click on the file name.  It will open the code on a new page.  Find and click the **"Raw"** button.  It's near the top of the code block about 2/3 the way over on the right side of the screen.  That'll open the code in a window with nothing else.  Hit Ctrl-A then Ctrl-C.  
-
-Now open a new blank Arduino project.  Delete any code that Auduino inserts and then paste (ctrl-V) the code into the blank Arduino Window.  
-
-Save the project with a meaningful name like **"Fast_Clock"**.  
+The easiest way to copy the code to your Arduino IDE is to
+1. Open the code by doing **one** of the following:
+   * Click on the file name ( [Fast_Clock.ino](https://github.com/Futski-III/Arduino-Fast-Clock/blob/master/Fast_Clock.ino) ).  It will open the code on a new page.  Find and click the **"Raw"** button.  It's near the top of the code block about 2/3 the way over on the right side of the screen.  That'll open the code in a window with nothing else.  
+   * [Click this link](https://raw.githubusercontent.com/Futski-III/Arduino-Fast-Clock/master/Fast_Clock.ino) to go directly to the Raw code.
+1. Hit Ctrl-A then Ctrl-C.  
+1. Open the Arduino IDE and open a new blank project.  
+   1. Delete any code that Auduino inserts
+   1. paste (ctrl-V) the code into the blank Arduino Window.  
+1. Save the project with a meaningful name like **"Fast_Clock"**.  
