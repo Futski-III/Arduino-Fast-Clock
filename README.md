@@ -71,3 +71,6 @@ The easiest way to copy the code to your Arduino IDE is to
 * [How does a Rotary Encoder Work](https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/
 )
 * [Debouncing a Rotary Encoder with hardware](http://embeddedsystemengineering.blogspot.com/2016/07/arm-cortex-m3-stm32f103-tutorial.html)
+
+## Having Issues
+Are you having problems or noticed a bug in the code?  At the top of this page is a tab called "Issues".  Click there, then open a "New Issue" and tell me about the problem, you're having.  If it's a code problem, I can work on fixing it.
