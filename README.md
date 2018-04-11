@@ -16,6 +16,9 @@ i.e. choose one of the following:  1:1, 2:1, 3:1, 4:1, 5:1, 6:1, 10:1, 12:1, 15:
 
 ## Library Dependencies
 The following libraries musty be installed for this project.
+
+Click here for instructions [How to Install Libraries from Github](https://github.com/Futski-III/Arduino-Fast-Clock/blob/master/How%20to%20Install%20Libraries.md)
+
 * __LiquidCrystal_I2C__ by Frank de Brabander [Get it here on GitHub](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
 
   **Note** This library may conflict with the NewLiquidCrystal library.  If you have NewLiquidCrystal library installed, you may need to uninstall it and use this library instead.  
@@ -27,8 +30,6 @@ The following libraries musty be installed for this project.
 
   **Note:**  By default, the LiquidMenu library will not work with an I2C 4x20 LCD.  To fix that you will need to edit the
 "LiquidMenu_config.h" file.  Change the I2C option from "false" to "true".  You will find the LiquidMenu_config.h file in the library folder.  You can use Notepad or any other text editor to make the change.  
-
-Click here for instructions [How to Install Libraries from Github](https://github.com/Futski-III/Arduino-Fast-Clock/blob/master/How%20to%20Install%20Libraries.md)
 
 ## Pin Connections
 | Device | Device pin | Arduino Pin | Protocol |
@@ -65,3 +66,8 @@ The easiest way to copy the code to your Arduino IDE is to
    1. Delete any code that Auduino inserts
    1. paste (ctrl-V) the code into the blank Arduino Window.  
 1. Save the project with a meaningful name like **"Fast_Clock"**.  
+
+## Interesting Links
+* [How does a Rotary Encoder Work](https://howtomechatronics.com/tutorials/arduino/rotary-encoder-works-use-arduino/
+)
+* [Debouncing a Rotary Encoder with hardware](http://embeddedsystemengineering.blogspot.com/2016/07/arm-cortex-m3-stm32f103-tutorial.html)
