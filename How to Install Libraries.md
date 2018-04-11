@@ -2,7 +2,7 @@
 
 It's actually very easy to install libraries from Github.  So I'll walk you though it.
 
-1. Click the **"Get it here on GitHub"** link
+1. Click the **"Get it here on GitHub"** link (or goto Github.com and search for the library name)
 1. Click the Green **"Clone or Download"** button
 1. Select Download ZIP.  Make sure you know where your file gets downloaded to.  You'll need to know that.  It'll usually be in you download folder.
 1. Open Arduino
