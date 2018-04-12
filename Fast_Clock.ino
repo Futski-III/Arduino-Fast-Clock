@@ -16,7 +16,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 
 #include <Arduino.h>			// Define normal Arduino Library
 #include <Wire.h>				// Needed for I2C usage 
-#include <LiquidCrystal_I2C.h>  // I2C LCD display				//github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library
+#include <LiquidCrystal_I2C.h>  // I2C LCD display				https://github.com/marcoschwartz/LiquidCrystal_I2C
 #include <TM1637Display.h>		// 4 Digit LED display			//github.com/avishorp/TM1637
 #include <TimeLib.h>			// Time management				//github.com/PaulStoffregen/Time
 //#include <DS1307RTC.h>			// Basic DS1307 / DS3231 RTC	//github.com/PaulStoffregen/DS1307RTC
