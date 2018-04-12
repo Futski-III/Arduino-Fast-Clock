@@ -19,7 +19,7 @@ The following libraries musty be installed for this project.
 
 Click here for instructions [How to Install Libraries from Github](https://github.com/Futski-III/Arduino-Fast-Clock/blob/master/How%20to%20Install%20Libraries.md)
 
-* __LiquidCrystal_I2C__ by Frank de Brabander [Get it here on GitHub](https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library)
+* __LiquidCrystal_I2C__ by marcoschwartz [Get it here on GitHub](https://github.com/marcoschwartz/LiquidCrystal_I2C)
 
   **Note** This library may conflict with the NewLiquidCrystal library.  If you have NewLiquidCrystal library installed, you may need to uninstall it and use this library instead.  
 * __TM1637Display__ by Avishay [Get it here on GitHub](https://github.com/avishorp/TM1637)
