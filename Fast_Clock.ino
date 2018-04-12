@@ -1,6 +1,6 @@
 /*
 Fast_Clock.ino - Arduino Fast Clock for Model Railroading
-Copyright (c) Dave Heili 2018
+Copyright (c) Dave Heili April 2018
 This software is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public
 License as published by the Free Software Foundation; either
@@ -79,6 +79,7 @@ char* prcText;					// Pointer to Real Clock Display string
 char* pfcText;					// Pointer to Fast Clock Display string
 char* ptcText;					// Pointer to Temp Clock Display string
 char* timePartText = "Set HH";
+char* clockTypeText = "Fast ";
 
 bool fcPaused = true;
 char* pausedText = "Paused  ";
@@ -124,11 +125,12 @@ LiquidLine menu_opt_set_rc(1, 1, "Set ", "Real ", "Clock ", ">");
 LiquidLine menu_opt_set_format(1, 2, "Time ", "Format ", milText);
 LiquidScreen menu2(menu_opt_set_fc, menu_opt_set_rc, menu_opt_set_format, menu_opt_back);
 
-LiquidLine menu_opt_set_clock_header(1, 0, "Set ", "Fast ", "Clock ");
+LiquidLine menu_opt_set_clock_header(1, 0, "Set ", clockTypeText, "Clock ");
 LiquidLine menu_opt_set_clock(1, 1, ptcText, "  ", timePartText);
 LiquidLine menu_opt_set_clock_save(1, 3, "Save");
 LiquidLine menu_opt_set_clock_canc(8, 3, "Canc");
 LiquidScreen menuSetClock(menu_opt_set_clock_header, menu_opt_set_clock, menu_opt_set_clock_save, menu_opt_set_clock_canc);
+
 
 LiquidMenu menu(lcd);
 
@@ -177,7 +179,8 @@ enum SaveDataAddress {
 	SaveHH = 0x09,
 	SaveRatio = 0x0A,
 };
-// Interrupt Service Routine for a change to encoder pin A
+
+// Interrupt Service Routine Looks for a change to encoder pin A
 void isr()
 {
 	if (digitalRead(ROTARY_ENCODE_A)) 
@@ -639,6 +642,7 @@ void SetFastClockClick() {
 	FormatTimeText(tcText, tempClock);
 	ptcText = (char*)tcText;
 	timePartText = "";
+	clockTypeText = "Fast ";
 	menuState = New;
 	menu.change_screen(menuSetClock);
 	menu.switch_focus(true);
@@ -650,6 +654,7 @@ void SetRealClockClick() {
 	FormatTimeText(tcText, tempClock);
 	ptcText = (char*)tcText;
 	timePartText = "";
+	clockTypeText = "Real ";
 	menuState = New;
 	menu.change_screen(menuSetClock);
 	menu.switch_focus(true);
