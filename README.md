@@ -31,6 +31,8 @@ Click here for instructions [How to Install Libraries from Github](https://githu
   **Note:**  By default, the LiquidMenu library will not work with an I2C 4x20 LCD.  To fix that you will need to edit the
 "LiquidMenu_config.h" file.  Change the I2C option from "false" to "true".  You will find the LiquidMenu_config.h file in the library folder.  You can use Notepad or any other text editor to make the change.  
 
+  Or - You can download the version that's included with the this project in github.  See above.
+
 ## Pin Connections
 | Device | Device pin | Arduino Pin | Protocol |
 | ------------- |:----------:|:----------:| -------- |
