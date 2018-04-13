@@ -23,6 +23,8 @@ Click here for instructions [How to Install Libraries from Github](https://githu
 
   **Note** This library may conflict with the NewLiquidCrystal library.  If you have NewLiquidCrystal library installed, you may need to uninstall it and use this library instead.  
 * __TM1637Display__ by Avishay [Get it here on GitHub](https://github.com/avishorp/TM1637)
+  
+  **Note** As of4/10/2018, there is a bug in this library which prevents it from being seen by the ArduinoIDE.  This can be easily fixed by finding the TM1637 library in your libraries folder.  Open the library.properties file and add **maintainer=** as a new row in the file.
 * __DS3232RTC__ by Jack Christensen [Get it here on GitHub](https://github.com/JChristensen/DS3232RTC)
 * __Bounce2__ by Thomas O Fredericks [Get it here on GitHub](https://github.com/thomasfredericks/Bounce2)
 * __TimeLib__ by Paul Stoffregen [Get it here on GitHub](https://github.com/PaulStoffregen/Time)
